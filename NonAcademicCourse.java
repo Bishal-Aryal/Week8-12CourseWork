@@ -23,24 +23,31 @@ public class NonAcademicCourse extends Course{
     public String getInstructorName(){
         return instructorName;
     }
+
     public int getDuration(){
         return duration;
     }
+
     public String getStartDate(){
         return startDate;
     }
+
     public String getCompletionDate(){
         return completionDate;
     }
+
     public String getExamDate(){
         return examDate;
     }
+
     public String getPrerequisite(){
         return prerequisite;
     }
+
     public boolean getRegistered(){
         return isRegistered;
     }
+
     public boolean getRemoved(){
         return isRemoved;
     }
@@ -76,9 +83,9 @@ public class NonAcademicCourse extends Course{
     }
     //display values if user is registered and if values are not empty/null
     public void display(){
-            out.println("Course ID: "+super.getCourseID());
-            out.println("Course Name: "+super.getCourseName());
-            out.println("Duration: "+super.getDuration());
+        out.println("Course ID: "+super.getCourseID());
+        out.println("Course Name: "+super.getCourseName());
+        out.println("Duration: "+super.getDuration());
         if(isRegistered){
             out.println("Instructor Name: "+instructorName);
             out.println("Starting Date: "+startDate);

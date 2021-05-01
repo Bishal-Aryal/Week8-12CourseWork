@@ -16,27 +16,33 @@ public class AcademicCourse extends Course{
         startingDate="";
         completionDate="";
         isRegistered=false;/*non premitive datatype gets defaultValue false but the value has to be set here for the variable to reset 
-                            its value every time the constructor object is invoked(called)*/
+        its value every time the constructor object is invoked(called)*/
     }
     //access private variables outside the class
     public String getLecturerName(){
         return lecturerName;
     }
+
     public String getLevel(){
         return level;
     }
+
     public String getCredit(){
         return credit;
     }
+
     public String getStartingDate(){
         return startingDate;
     }
+
     public String getCompletionDate(){
         return completionDate;
     }
+
     public boolean getRegistered(){
         return isRegistered;
     }
+
     public int getNoOfAssignments(){
         return noOfAssignments;
     }
@@ -44,6 +50,7 @@ public class AcademicCourse extends Course{
     public void setLecturerName(String lecturerName){
         this.lecturerName=lecturerName;
     }
+
     public void setNoOfAssignments(int noOfAssignments){
         this.noOfAssignments=noOfAssignments;
     }

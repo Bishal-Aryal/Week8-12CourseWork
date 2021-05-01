@@ -19,12 +19,15 @@ public class Course{
     public String getCourseID(){
         return courseID;
     }
+
     public String getCourseName(){
         return courseName;
     }
+
     public String getCourseLeader(){
         return courseLeader;
     }
+
     public int getDuration(){
         return duration;
     }
