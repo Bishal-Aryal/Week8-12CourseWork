@@ -1,4 +1,4 @@
-import static java.lang.System.out;
+import static java.lang.System.out; //import out variable from System class to avoid writing System.out multiple times in this class
 
 public class Course{
     //fields are private for encapsulation 
@@ -6,7 +6,7 @@ public class Course{
     private String courseName;
     private String courseLeader;
     private int duration;
-    //constructor method runs when calling virtual methods or when making instance(Object) of the class
+    //constructor method runs when calling virtual/instance methods (or when making instance(Object) of the class to be precise)
     public Course(String courseID, String courseName, int duration){
         //set initial values
         //Premitive datatypes have a default value if not initialised but non premitive datatypes get null value
@@ -40,7 +40,7 @@ public class Course{
         out.println("courseID: "+courseID);
         out.println("courseName: "+courseName);
         out.println("duration: "+duration);
-        if(!courseLeader.isEmpty()){
+        if(!courseLeader.isEmpty()){ //check if courseLeader variable is empty("" or length is equal to 0)
             out.println("courseLeader: "+courseLeader);
         }
     }

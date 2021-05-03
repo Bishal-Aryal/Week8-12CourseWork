@@ -1,6 +1,6 @@
-import static java.lang.System.out;
+import static java.lang.System.out; //import out variable from System class to avoid writing System.out multiple times in this class
 
-public class AcademicCourse extends Course{
+public class AcademicCourse extends Course{ //inherit public, protected methods and variables from superclass Course
     private String lecturerName;
     private String level;
     private String credit;
@@ -18,7 +18,7 @@ public class AcademicCourse extends Course{
         isRegistered=false;/*non premitive datatype gets defaultValue false but the value has to be set here for the variable to reset 
         its value every time the constructor object is invoked(called)*/
     }
-    //access private variables outside the class
+    //access values stored in private variables outside the class
     public String getLecturerName(){
         return lecturerName;
     }
@@ -78,7 +78,7 @@ public class AcademicCourse extends Course{
             out.println("Course Name: "+super.getCourseName());
             out.println("Duration: "+super.getDuration());
             String courseLeader = super.getCourseLeader();
-            if(!courseLeader.isEmpty()){
+            if(!courseLeader.isEmpty()){//check if courseLeader variable is empty("" or length is equal to 0)
                 out.println("Course Leader: "+super.getCourseLeader());
             }
         }
